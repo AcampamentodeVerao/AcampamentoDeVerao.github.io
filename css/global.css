@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'museo-sans-500';
+    src: url(../assets/fonts/MuseoSans_500.otf);
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    
+    transition: 0.2s;
+
+    outline: none;
+    
+}
+
+body {
+
+    scroll-behavior: smooth;
+
+}

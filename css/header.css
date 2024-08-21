@@ -1,0 +1,181 @@
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 2rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+header.background-day {
+
+    background-color: #0569ce;
+    
+}
+
+header.background-night {
+
+    background-color: #003366;
+    
+}
+
+header div.assets {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 320px;
+
+}
+
+header div.assets img#LogoJA {
+
+    width: 100px;
+
+}
+
+header div.assets img#NomeMJA {
+
+    width: 200px;
+
+}
+
+header i.fa-solid.fa-bars {
+
+    display: none;
+    
+    font-size: 1.5rem;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+header nav ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style-type: none;
+    
+    gap: 10px;
+
+}
+
+header nav ul li {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+
+}
+
+header nav ul li a {
+
+    font-size: 1rem;
+    font-family: 'museo-sans-500';
+
+    text-decoration: none;
+    text-align: center;
+
+    width: 100%;
+
+    padding: 0.5rem;
+
+    color: white;
+
+}
+
+header nav ul li a:hover {
+
+    color: #FFD300;
+    background: #033B74;
+
+}
+
+@media (max-width: 1080px) {
+    
+    header nav {
+
+        position: absolute;
+        top: 0;
+        left: -100vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vw;
+        min-height: 100vh;
+
+    }
+
+    header nav.background-day {
+
+        background-color: #0569CE;
+
+    }
+
+    header nav.background-night {
+
+        background-color: #003366;
+
+    }
+
+    header nav.active {
+
+        left: 0;
+
+    }
+
+    header i.fa-solid.fa-bars {
+
+        display: block;
+
+        z-index: 1;
+    
+    }
+
+    header nav ul {
+
+        flex-direction: column;
+
+        gap: 0;
+
+    }
+
+    header nav ul li {
+
+        width: 100vw;
+        
+    }
+
+    header nav ul li a {
+
+        font-size: 1.2rem;
+        padding: 1rem 0;
+
+    }
+    
+}
+
+@media (max-width: 550px) {
+
+    header div.assets img#NomeMJA {
+
+        display: none;
+
+    }
+
+}
