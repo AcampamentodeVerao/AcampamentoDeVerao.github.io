@@ -1,15 +1,16 @@
-section {
+section#home {
 
-    background: #000;
+    
+    
+    height: 100vw;
 
-    height: 100vh;
-
-    color: white;
+    padding: 2rem;
 
 }
 
-section#home {
+section#home h1 {
 
-    margin-top: 96.91px;
+    font-family: 'Montserrat';
+    font-weight: 500;
 
 }

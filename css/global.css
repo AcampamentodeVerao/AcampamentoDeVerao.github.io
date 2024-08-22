@@ -3,6 +3,13 @@
     src: url(../assets/fonts/MuseoSans_500.otf);
 }
 
+@font-face {
+    font-family: 'museo-sans-100';
+    src: url(../assets/fonts/MuseoSans-100.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
 
     margin: 0;
