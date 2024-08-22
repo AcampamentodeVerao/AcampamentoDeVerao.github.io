@@ -138,4 +138,12 @@ section#home div.shadow div.conteudo button:hover {
     
     }
 
+    section#home div.shadow div.conteudo button {
+    
+        font-size: 1rem;
+
+        width: 300px;
+    
+    }
+
 }
