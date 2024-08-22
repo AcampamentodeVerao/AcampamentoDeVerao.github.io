@@ -8,31 +8,43 @@ section#home {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh; /* 100% da altura da viewport */
+    height: 90vh; /* 100% da altura da viewport */
 
-    padding: 2rem;
+    margin-top: 82px;
 
 }
 
-section#home div {
+section#home div.shadow {
 
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    width: 100vw;
+    height: 90vh;
+
+    padding: 5rem;
+
+}
+
+section#home div.shadow div.conteudo {
+
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 
     flex-direction: column;
 
-    background: rgba(0, 0, 0, 0.753);
+    text-align: left;
 
-    height: 300px;
-
-    padding: 2rem;
-
-    border-radius: 10px;
+    width: 500px;
+    height: 250px;
 
 }
 
-section#home div h1 {
+section#home div.shadow div.conteudo h1 {
 
     font-family: 'Montserrat';
     font-weight: 700;
@@ -40,11 +52,9 @@ section#home div h1 {
 
     color: white;
 
-    text-align: center;
-
 }
 
-section#home div p {
+section#home div.shadow div.conteudo p {
 
     font-family: 'Montserrat';
     font-weight: 500;
@@ -53,11 +63,9 @@ section#home div p {
 
     color: white;
 
-    text-align: center;
-
 }
 
-section#home div button {
+section#home div.shadow div.conteudo button {
 
     background: #FF8200;
     color: white;
@@ -75,7 +83,7 @@ section#home div button {
 
 }
 
-section#home div button:hover {
+section#home div.shadow div.conteudo button:hover {
 
     background: #eb871c;
 
@@ -87,20 +95,36 @@ section#home div button:hover {
 
         height: 100vh;
     
-    }    
+    }
+
+    section#home div.shadow {
+
+        align-items: flex-start;
+        justify-content: center;
+    
+        height: 100vh;
+    
+    }
+
+    section#home div.shadow div.conteudo {
+
+        align-items: center;
+    
+    }
+
+    section#home div.shadow div.conteudo h1,
+    section#home div.shadow div.conteudo p {
+
+        text-align: center;
+
+    }
 
 }
 
 @media (max-width: 720px) {
 
     
-    section#home div {
-    
-        height: 400px;
-    
-    }
-    
-    section#home div h1 {
+    section#home div.shadow div.conteudo h1 {
     
         font-weight: 700;
     
@@ -108,10 +132,10 @@ section#home div button:hover {
     
     }
 
-    section#home div p {
+    section#home div.shadow div.conteudo p {
     
         font-size: 1rem;
     
-    } 
+    }
 
 }

@@ -20,11 +20,9 @@
     transition: 0.2s;
 
     outline: none;
-    
-}
-
-body {
 
     scroll-behavior: smooth;
-
+    
+    scroll-margin-top: 82px;
+    
 }
