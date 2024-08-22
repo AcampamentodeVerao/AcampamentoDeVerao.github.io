@@ -123,6 +123,12 @@ section#home div.shadow div.conteudo button:hover {
 
 @media (max-width: 720px) {
 
+    section#home div.shadow {
+        
+        width: 100%;
+    
+    }
+
     
     section#home div.shadow div.conteudo h1 {
     
