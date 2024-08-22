@@ -1,16 +1,117 @@
 section#home {
 
-    
-    
-    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../assets/img/Barraca-Lareira.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh; /* 100% da altura da viewport */
 
     padding: 2rem;
 
 }
 
-section#home h1 {
+section#home div {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    background: rgba(0, 0, 0, 0.753);
+
+    height: 300px;
+
+    padding: 2rem;
+
+    border-radius: 10px;
+
+}
+
+section#home div h1 {
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3rem;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+section#home div p {
 
     font-family: 'Montserrat';
     font-weight: 500;
+
+    font-size: 1.2rem;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+section#home div button {
+
+    background: #FF8200;
+    color: white;
+    
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 1rem 2rem;
+
+    cursor: pointer;
+
+}
+
+section#home div button:hover {
+
+    background: #eb871c;
+
+}
+
+@media (max-width: 1080px) {
+
+    section#home {
+
+        height: 100vh;
+    
+    }    
+
+}
+
+@media (max-width: 720px) {
+
+    
+    section#home div {
+    
+        height: 400px;
+    
+    }
+    
+    section#home div h1 {
+    
+        font-weight: 700;
+    
+        font-size: 2rem;
+    
+    }
+
+    section#home div p {
+    
+        font-size: 1rem;
+    
+    } 
 
 }
