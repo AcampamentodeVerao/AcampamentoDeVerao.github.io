@@ -235,18 +235,6 @@ section#sobre section.conteudo section.direita img.img_horizontal {
 
 @media (max-width: 400px) {
 
-    section#sobre section.conteudo {
-    
-        padding: 2rem 0.5rem;
-    
-    }
-
-    section#sobre section.conteudo section.esquerda h1 {
-        
-        font-size: 1rem;
-        
-    }
-
     section#sobre section.conteudo section.esquerda section.textos {
 
         display: flex;
@@ -259,6 +247,44 @@ section#sobre section.conteudo section.direita img.img_horizontal {
 
     }
 
+    section#sobre section.conteudo section.esquerda section.textos div.bloco {
+        
+        align-items: center;
+        
+        width: 350px;
+
+        margin-bottom: 1.5rem;
+    
+    }
+
+    section#sobre section.conteudo section.esquerda section.textos div.bloco p:last-child {
+        
+        font-size: 0.9rem
+    
+    }
+
+    section#sobre section.conteudo section.esquerda section.textos div.bloco i {
+        
+        margin-right: 0.5rem;
+
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    section#sobre section.conteudo {
+    
+        padding: 2rem 0.5rem;
+    
+    }
+
+    section#sobre section.conteudo section.esquerda h1 {
+        
+        font-size: 1rem;
+        
+    }
+
     section#sobre section.conteudo section.esquerda section.textos p.pConecte {
         
         width: 300px;
@@ -267,11 +293,7 @@ section#sobre section.conteudo section.direita img.img_horizontal {
 
     section#sobre section.conteudo section.esquerda section.textos div.bloco {
         
-        align-items: center;
-        
         width: 300px;
-
-        margin-bottom: 1rem;
     
     }
 
@@ -287,12 +309,6 @@ section#sobre section.conteudo section.direita img.img_horizontal {
         
         width: 50px;
     
-    }
-
-    section#sobre section.conteudo section.esquerda section.textos div.bloco div.texto {
-    
-        width: 100%;
-        
     }
 
     section#sobre section.conteudo section.direita img.img_horizontal {
