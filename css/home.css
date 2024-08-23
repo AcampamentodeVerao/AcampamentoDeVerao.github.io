@@ -160,3 +160,25 @@ section#home div.shadow div.conteudo button:hover {
     }
 
 }
+
+@media (max-width: 500px) {
+    
+    section#home div.shadow div.conteudo {
+    
+        height: 200px;
+    
+    }
+
+    section#home div.shadow div.conteudo h1 {
+        
+        font-size: 1.5rem;
+
+    }
+
+    section#home div.shadow div.conteudo p {
+
+        font-size: 0.8rem;
+
+    }
+
+}
