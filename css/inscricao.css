@@ -4,8 +4,8 @@ section#inscricao {
     align-items: center;
 
     flex-direction: column;
-    
-    height: 100vh;
+
+    padding: 0 2rem;
 
 }
 
@@ -24,9 +24,11 @@ section#inscricao p.titulo {
 
 }
 
-section#inscricao p {
+section#inscricao p.optionSleep {
 
     font-family: 'Montserrat';
+
+    margin-bottom: 1rem;
     
     text-align: center;
 
@@ -35,25 +37,61 @@ section#inscricao p {
 section#inscricao section.gridOptions {
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    gap: 10px;
-        
+    grid-template-columns: repeat(2, 1fr);
     
-    height: 150px;
-
-    margin-top: 2rem;
+    gap: 10px;
 
 }
 
 section#inscricao section.gridOptions section.dormitorios {
 
-    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    flex-direction: column;
+    
+    width: 500px;
+    height: 100%;
+
+    border: 1px solid #FF8200;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 
-section#inscricao section.gridOptions section.dormitorios p {
+section#inscricao section.gridOptions section.dormitorios p.tituloOptions {
+
+    background: #FF8200;
+    color: white;
+    
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    text-align: center;
+
+    border: none;
+    
+    width: 100%;
+    
+    padding: 0.5rem 1rem;
+
+}
+
+section#inscricao section.gridOptions section.dormitorios div.conteudo p {
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+
+    text-align: justify;
+    text-indent: 2rem;
+
+    padding: 1rem;
+
+}
+
+section#inscricao button {
 
     background: #FF8200;
     color: white;
@@ -64,9 +102,46 @@ section#inscricao section.gridOptions section.dormitorios p {
 
     border: none;
     border-radius: 10px;
-    
-    padding: 0.5rem 1rem;
+
+    margin-top: 1rem;
+    padding: 1rem 2rem;
 
     cursor: pointer;
+
+}
+
+section#inscricao button:hover {
+
+    background: #eb871c;
+
+}
+
+@media (max-width: 1150px) {
+
+    section#inscricao section.gridOptions section.dormitorios {
+     
+        width: 300px;
+    
+    }    
+
+}
+
+@media (max-width: 720px) {
+
+    section#inscricao section.gridOptions section.dormitorios {
+     
+        width: 100%;
+    
+    }
+    
+    section#inscricao section.gridOptions {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-direction: column;
+    
+    }
 
 }
