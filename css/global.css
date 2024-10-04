@@ -17,8 +17,6 @@
 
     box-sizing: border-box;
     
-    transition: 0.2s;
-
     outline: none;
 
     scroll-behavior: smooth;

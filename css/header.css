@@ -5,6 +5,8 @@ header {
     left: 0;
     right: 0;
 
+    background-color: #0569CE;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,6 +120,9 @@ header nav ul li a:hover {
 
         width: 100vw;
         min-height: 100vh;
+
+        transition: 0.2s;
+
 
     }
 
