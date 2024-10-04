@@ -1,0 +1,72 @@
+section#inscricao {
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    
+    height: 100vh;
+
+}
+
+section#inscricao p.titulo {
+
+    color: #003366;
+
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    text-align: center;
+    text-shadow: 0 0 10px white;
+
+    padding: 1rem 0;
+
+}
+
+section#inscricao p {
+
+    font-family: 'Montserrat';
+    
+    text-align: center;
+
+}
+
+section#inscricao section.gridOptions {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 10px;
+        
+    
+    height: 150px;
+
+    margin-top: 2rem;
+
+}
+
+section#inscricao section.gridOptions section.dormitorios {
+
+    height: 50px;
+
+}
+
+section#inscricao section.gridOptions section.dormitorios p {
+
+    background: #FF8200;
+    color: white;
+    
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    border: none;
+    border-radius: 10px;
+    
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;
+
+}
