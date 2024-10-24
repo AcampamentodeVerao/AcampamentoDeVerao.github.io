@@ -1,0 +1,37 @@
+section#localizacao {
+
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    padding: 0 2rem;
+
+    /* width: 100vw; */
+
+}
+
+section#localizacao p.titulo {
+
+    color: #003366;
+
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    text-align: center;
+    text-shadow: 0 0 10px white;
+
+    padding: 1rem 0;
+
+}
+
+section#localizacao div.endereco {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70vw;
+
+}
