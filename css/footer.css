@@ -1,0 +1,28 @@
+footer {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    background: #003366;
+
+    padding: 1rem 0;
+
+}
+
+footer p {
+
+    color: white;
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+
+}
+
+footer p:first-child {
+
+    margin-bottom: 1rem;
+
+}
