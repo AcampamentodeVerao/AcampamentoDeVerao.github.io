@@ -73,7 +73,7 @@ section#localizacao iframe {
 
     section#localizacao {
     
-        padding: 2rem 1rem;
+        padding: 2rem 4rem;
     
     }
 
@@ -90,6 +90,8 @@ section#localizacao iframe {
         text-align: left;
     
         width: 400px;
+
+        margin-bottom: 1rem;
 
     }
 
@@ -108,6 +110,12 @@ section#localizacao iframe {
 }
 
 @media (max-width: 880px) {
+
+    section#localizacao {
+    
+        padding: 2rem 1rem;
+    
+    }
 
     section#localizacao {
 
@@ -141,12 +149,6 @@ section#localizacao iframe {
 
         width: 380px;
     
-    }
-
-    section#localizacao div.endereco p span {
-
-        display: none;
-
     }
     
     section#localizacao iframe {
