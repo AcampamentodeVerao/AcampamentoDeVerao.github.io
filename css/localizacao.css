@@ -141,6 +141,12 @@ section#localizacao iframe {
 
 @media (max-width: 550px) {
 
+    section#localizacao div.endereco p.titulo {
+    
+        font-size: 1rem;
+    
+    }
+
     section#localizacao div.endereco p {
     
         text-align: center;
