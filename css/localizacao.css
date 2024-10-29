@@ -18,7 +18,10 @@ section#localizacao div.endereco {
     
     background: white;
 
+    border: 2px solid #001b36;
     border-radius: 20px;
+
+    box-shadow: 3px -3px 5px #003366, -3px -3px 5px #001b36;
 
     width: 450px;
     height: 400px;
@@ -135,6 +138,8 @@ section#localizacao iframe {
         height: auto;
 
         margin-bottom: 2rem;
+
+        padding: 0.5rem;
     
     }
     
@@ -157,9 +162,13 @@ section#localizacao iframe {
     section#localizacao div.endereco p.titulo {
     
         font-size: 1rem;
-
-        text-indent: 0;
     
+    }
+
+    section#localizacao div.endereco p {
+    
+        text-indent: 0;
+
     }
     
     section#localizacao iframe {
