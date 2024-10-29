@@ -26,3 +26,51 @@ footer p:first-child {
     margin-bottom: 1rem;
 
 }
+
+@media (max-width: 720px) {
+
+    footer p {
+    
+        font-size: 0.8rem;
+    
+    }
+    
+}
+
+@media (max-width: 400px) {
+
+    footer p {
+        
+        font-size: 0.7rem;
+        
+    }
+    
+    footer p:first-child {
+        
+        margin-bottom: 0.5rem;
+        
+    }
+    
+    footer p:last-child {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-direction: column;
+
+    }
+    
+    footer p span:nth-child(2) {
+        
+        display: none;
+        
+    }
+
+    footer p span:nth-child(1) {
+        
+        margin-bottom: 0.25rem;
+        
+    }
+
+}

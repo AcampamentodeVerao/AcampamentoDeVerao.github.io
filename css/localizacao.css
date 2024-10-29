@@ -4,7 +4,9 @@ section#localizacao {
     align-items: center;
     justify-content: space-between;
 
-    padding: 3rem 2rem;
+    margin-top: 2rem;
+
+    padding: 0 2rem;
 
 }
 
@@ -69,6 +71,12 @@ section#localizacao iframe {
 
 @media (max-width: 1080px) {
 
+    section#localizacao {
+    
+        padding: 2rem 1rem;
+    
+    }
+
     section#localizacao div.endereco p.titulo {
     
         font-size: 1.2rem;
@@ -117,17 +125,63 @@ section#localizacao iframe {
     
     section#localizacao iframe {
     
-        width: 500px;
+        width: 450px;
     
     }
 
 }
 
 @media (max-width: 550px) {
+
+    section#localizacao div.endereco p {
+    
+        text-align: center;
+
+        text-indent: 0;
+
+        width: 380px;
+    
+    }
+
+    section#localizacao div.endereco p span {
+
+        display: none;
+
+    }
     
     section#localizacao iframe {
     
-        width: 500px;
+        width: 350px;
+        height: 300px;
+
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    section#localizacao div.endereco p {
+    
+        font-size: 0.8rem;
+        
+        width: 280px;
+    
+    }
+    
+    section#localizacao iframe {
+    
+        width: 300px;
+
+    }
+
+}
+
+@media (max-width: 320px) {
+    
+    section#localizacao iframe {
+    
+        width: 280px;
+        height: 280px;
 
     }
 
