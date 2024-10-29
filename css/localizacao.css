@@ -4,20 +4,26 @@ section#localizacao {
     align-items: center;
     justify-content: space-between;
 
+    background: #003366;
+
+    height: 100vh;
+
     margin-top: 2rem;
 
-    padding: 0 2rem;
+    padding: 0 4rem;
 
 }
 
 section#localizacao div.endereco {
     
-    display: flex;
-    align-items: center;
+    background: white;
 
-    flex-direction: column;
+    border-radius: 20px;
 
+    width: 450px;
     height: 400px;
+
+    padding: 1rem;
 
 }
 
@@ -38,13 +44,17 @@ section#localizacao div.endereco p.titulo {
 
 section#localizacao div.endereco p {
 
+    color: black;
+
     font-family: 'Montserrat';
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 
-    text-align: justify;
+    text-align: left;
     text-shadow: 0 0 10px white;
-    text-indent: 2rem;
+    text-indent: 1rem;
+
+    margin: 0 0 1rem 1rem;
 
 }
 
@@ -77,6 +87,12 @@ section#localizacao iframe {
     
     }
 
+    section#localizacao div.endereco {
+    
+        width: 380px;
+    
+    }
+
     section#localizacao div.endereco p.titulo {
     
         font-size: 1.2rem;
@@ -86,18 +102,6 @@ section#localizacao iframe {
     section#localizacao div.endereco p {
     
         font-size: 1rem;
-
-        text-align: left;
-    
-        width: 400px;
-
-        margin-bottom: 1rem;
-
-    }
-
-    section#localizacao div.endereco p br {
-
-        display: none;
 
     }
 
@@ -112,6 +116,8 @@ section#localizacao iframe {
 @media (max-width: 880px) {
 
     section#localizacao {
+        
+        height: auto;
     
         padding: 2rem 1rem;
     
@@ -125,6 +131,7 @@ section#localizacao iframe {
 
     section#localizacao div.endereco {
     
+        width: 450px;
         height: auto;
 
         margin-bottom: 2rem;
@@ -141,19 +148,17 @@ section#localizacao iframe {
 
 @media (max-width: 550px) {
 
+    section#localizacao div.endereco {
+
+        width: 350px;
+
+    }
+
     section#localizacao div.endereco p.titulo {
     
         font-size: 1rem;
-    
-    }
-
-    section#localizacao div.endereco p {
-    
-        text-align: center;
 
         text-indent: 0;
-
-        width: 380px;
     
     }
     
@@ -168,11 +173,15 @@ section#localizacao iframe {
 
 @media (max-width: 400px) {
 
+    section#localizacao div.endereco {
+
+        width: 300px;
+
+    }
+
     section#localizacao div.endereco p {
     
         font-size: 0.8rem;
-        
-        width: 280px;
     
     }
     
@@ -185,6 +194,12 @@ section#localizacao iframe {
 }
 
 @media (max-width: 320px) {
+
+    section#localizacao div.endereco {
+
+        width: 280px;
+
+    }
     
     section#localizacao iframe {
     
