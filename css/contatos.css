@@ -1,9 +1,380 @@
-section.contatos {
+section#contatos {
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    flex-direction: column;
+
+    padding: 1rem 3rem;
+
+}
+
+section#contatos h2.titulo {
+
+    color: #003366;
+
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+
+}
+
+section#contatos h3,
+section#contatos h4 {
+
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 500;
+
+    margin-bottom: 1rem;
+
+}
+
+section#contatos section.contatoDistrito {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 700px;
+
+    margin: 1rem 0;
+
+}
+
+section#contatos section.contatoDistrito div.distritalJovem {
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     flex-direction: column;
+
+    background: white;
+
+    border: 1px solid #003366;
+    border-radius: 10px;
+
+    padding: 0.5rem 1rem;
+
+}
+
+section#contatos section.contatoDistrito div.distritalJovem p.cargo {
+
+    color: #003366;
+
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+
+}
+
+section#contatos section.contatoDistrito div.distritalJovem div.contato {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 300px;
+
+}
+
+section#contatos section.contatoDistrito div.distritalJovem div.contato p.nome,
+section#contatos section.contatoDistrito div.distritalJovem div.contato p.numero {
+
+    color: #003366;
+
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+section#contatos section.listaIgrejas {
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    flex-direction: column;
+
+}
+
+section#contatos section.listaIgrejas p.contatosDiretoresJovens {
+
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 500;
+
+    margin-bottom: 1rem;
+
+}
+
+section#contatos section.listaIgrejas section.igrejas {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 700px;
+
+}
+
+section#contatos section.listaIgrejas section.igrejas section.igrejasLadoEsquerdo,
+section#contatos section.listaIgrejas section.igrejas section.igrejasLadoDireito {
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    flex-direction: column;
+
+    height: 450px;
+
+}
+
+section#contatos section.listaIgrejas section.igrejas div.divIgreja {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    background: white;
+    
+    border: 1px solid #003366;
+    border-radius: 10px;
+
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+
+}
+
+section#contatos section.listaIgrejas section.igrejas div.divIgreja:last-child {
+
+    margin: 0;
+
+}
+
+section#contatos section.listaIgrejas section.igrejas div.divIgreja p.nomeIgreja {
+
+    color: #003366;
+
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+
+}
+
+section#contatos section.listaIgrejas section.igrejas div.divIgreja div.contato {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 300px;
+
+}
+
+section#contatos section.listaIgrejas section.igrejas div.divIgreja div.contato p.nome,
+section#contatos section.listaIgrejas section.igrejas div.divIgreja div.contato p.numero {
+
+    color: #003366;
+
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+section#contatos section.listaIgrejas section.igrejas div.divIgreja div.contato p.numero i,
+section#contatos section.contatoDistrito div.distritalJovem div.contato p.numero i {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: #25D366;
+    color: white;
+
+    font-size: 2rem;
+    
+    border-radius: 5px;
+    border: 1px solid transparent;
+    
+    width: 45px;
+    height: 45px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+section#contatos section.listaIgrejas section.igrejas div.divIgreja div.contato p.numero i:hover,
+section#contatos section.contatoDistrito div.distritalJovem div.contato p.numero i:hover {
+
+    background: white;
+    color: #25D366;
+    
+    border: 1px solid #25D366;
+
+}
+
+@media (max-width: 720px) {
+
+    section#contatos {
+    
+        padding: 1rem 2rem;
+    
+    }
+
+    section#contatos section.listaIgrejas section.igrejas div.divIgreja div.contato,
+    section#contatos section.contatoDistrito div.distritalJovem div.contato {
+     
+        width: 250px;
+
+    }
+
+    section#contatos section.listaIgrejas section.igrejas,
+    section#contatos section.contatoDistrito {
+    
+        width: 600px;
+    
+    }
+
+    section#contatos h2.titulo {
+    
+        font-size: 1.2rem;
+    
+    }
+    
+    section#contatos h3,
+    section#contatos h4,
+    section#contatos section.listaIgrejas p.contatosDiretoresJovens {
+
+        font-size: 0.9rem;
+
+    }
+
+}
+
+@media (max-width: 630px) {
+
+    section#contatos {
+    
+        padding: 1rem 0;
+    
+    }
+
+    section#contatos section.listaIgrejas section.igrejas div.divIgreja div.contato,
+    section#contatos section.contatoDistrito div.distritalJovem div.contato {
+     
+        width: 200px;
+
+    }
+
+    section#contatos section.listaIgrejas section.igrejas,
+    section#contatos section.contatoDistrito {
+    
+        width: 500px;
+    
+    }
+
+    section#contatos h2.titulo {
+    
+        text-align: center;
+    
+    }
+    
+    section#contatos h3,
+    section#contatos h4,
+    section#contatos section.listaIgrejas p.contatosDiretoresJovens {
+
+        width: 300px;
+
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    section#contatos section.listaIgrejas section.igrejas section.igrejasLadoEsquerdo,
+    section#contatos section.listaIgrejas section.igrejas section.igrejasLadoDireito {
+
+        height: auto;
+    
+    }
+
+    section#contatos section.listaIgrejas section.igrejas div.divIgreja div.contato,
+    section#contatos section.contatoDistrito div.distritalJovem div.contato {
+     
+        width: 280px;
+
+    }
+
+    section#contatos section.listaIgrejas section.igrejas section.igrejasLadoDireito {
+
+        margin-top: 1rem;
+
+    }
+
+    section#contatos section.listaIgrejas section.igrejas,
+    section#contatos section.contatoDistrito {
+    
+        flex-direction: column;
+        
+        width: auto;
+    
+    }
+
+    section#contatos section.contatoDistrito div.distritalJovem {
+
+        margin-bottom: 1rem;
+
+    }
+
+    section#contatos h2.titulo {
+    
+        text-align: center;
+    
+    }
+    
+    section#contatos h3,
+    section#contatos h4,
+    section#contatos section.listaIgrejas p.contatosDiretoresJovens {
+
+        /* width: 300px; */
+
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    section#contatos h2.titulo {
+    
+        font-size: 0.9rem;
+        
+    }
+
+    section#contatos section.listaIgrejas section.igrejas div.divIgreja div.contato p.nome,
+    section#contatos section.contatoDistrito div.distritalJovem div.contato p.nome {
+    
+        font-size: 0.9rem;
+    
+    }
 
 }

@@ -220,32 +220,32 @@
         <!-- CONTATOS -->
         <section id="contatos">
 
-            <h2>Igrejas do Distrito de Senador Canedo</h2>
+            <h2 class="titulo">∙ Igrejas do Distrito de Senador Canedo ∙</h2>
 
             <h3>Diretores do Ministério Jovem de cada Igreja do Distrito de Senador Canedo.</h3>
 
-            <p>Para mandar uma mensagem, aperte no icone do WhatsApp.</p>
+            <h4>Para mandar uma mensagem, aperte no icone do WhatsApp.</h4>
 
             <section class="contatoDistrito">
 
                 <div class="distritalJovem">
-                    <p>Distrital Ministério Jovem</p>
+                    <p class="cargo">Distrital Ministério Jovem</p>
 
                     <div class="contato">
-                        <p class="nome">Andréa</p>
+                        <p class="nome">Andréa da Costa</p>
                         <p class="numero">
-                            <i class="fa-brands fa-whatsapp"></i>
+                            <i onclick="mandarMensagem(5562981506517, 'Andréa')" class="fa-brands fa-whatsapp"></i>
                         </p>
                     </div>
                 </div>
 
                 <div class="distritalJovem">
-                    <p>Pastor Distrital</p>
+                    <p class="cargo">Pastor Distrital</p>
 
                     <div class="contato">
                         <p class="nome">Pastor Adriano</p>
                         <p class="numero">
-                            <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
+                            <i onclick="mandarMensagem(5579999557712, 'Pastor Adriano')" class="fa-brands fa-whatsapp"></i>
                         </p>
                     </div>
                 </div>
@@ -254,91 +254,98 @@
 
             <section class="listaIgrejas">
 
-                <section class="igrejasLadoEsquerdo">
-                    <!-- <div class="BoaVista">
-                        <p>Boa Vista II</p>
+                <p class="contatosDiretoresJovens">Contato dos Diretores Jovens de cada Igreja do Distrito de Senador Canedo</p>
 
-                        <div class="contato">
-                            <p class="nome"></p>
-                            <p class="numero">
-                                <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
-                            </p>
+                <section class="igrejas">
+
+                    <section class="igrejasLadoEsquerdo">
+
+                        <!-- <div class="divIgreja BoaVista">
+                            <p class="nomeIgreja">Boa Vista II</p>
+                            <div class="contato">
+                                <p class="nome"></p>
+                                <p class="numero">
+                                    <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
+                                </p>
+                            </div>
+                        </div> -->
+
+                        <div class="divIgreja Central">
+                            <p class="nomeIgreja">Central Senador Canedo</p>
+                            <div class="contato">
+                                <p class="nome">Diretora Jovem: Tayane</p>
+                                <p class="numero">
+                                    <i onclick="mandarMensagem(5562991006435, 'Tayane')" class="fa-brands fa-whatsapp"></i>
+                                </p>
+                            </div>
                         </div>
-                    </div> -->
 
-                    <div class="Central">
-                        <p>Central Senador Canedo</p>
-
-                        <div class="contato">
-                            <p class="nome">Tayane</p>
-                            <p class="numero">
-                                <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
-                            </p>
+                        <div class="divIgreja Oliveiras">
+                            <p class="nomeIgreja">Jardim das Oliveiras</p>
+                            <div class="contato">
+                                <p class="nome">Diretora Jovem: Erica</p>
+                                <p class="numero">
+                                    <i onclick="mandarMensagem(5562994612020, 'Erica')" class="fa-brands fa-whatsapp"></i>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="Oliveiras">
-                        <p>Jardim das Oliveiras</p>
 
-                        <div class="contato">
-                            <p class="nome">Erica</p>
-                            <p class="numero">
-                                <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
-                            </p>
+                        <div class="divIgreja Morada">
+                            <p class="nomeIgreja">Morada do Bosque</p>
+                            <div class="contato">
+                                <p class="nome">Diretora Jovem: Kellem</p>
+                                <p class="numero">
+                                    <i onclick="mandarMensagem(5562992992187, 'Kellem')" class="fa-brands fa-whatsapp"></i>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="Morada">
-                        <p>Morada do Bosque</p>
 
-                        <div class="contato">
-                            <p class="nome">Kellem</p>
-                            <p class="numero">
-                                <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
-                            </p>
+                    </section>
+
+                    <section class="igrejasLadoDireito">
+
+                        <div class="divIgreja Industrial">
+                            <p class="nomeIgreja">Parque Industrial</p>
+                            <div class="contato">
+                                <p class="nome">Diretor Jovem: Ideglan</p>
+                                <p class="numero">
+                                    <i onclick="mandarMensagem(5562994451798, 'Ideglan')" class="fa-brands fa-whatsapp"></i>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </section>
 
-                <section class="igrejasLadoDireito">
-                    <div class="Industrial">
-                        <p>Parque Industrial</p>
-
-                        <div class="contato">
-                            <p class="nome">Ideglan</p>
-                            <p class="numero">
-                                <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
-                            </p>
+                        <div class="divIgreja Projeto">
+                            <p class="nomeIgreja">Projeto AMAR</p>
+                            <div class="contato">
+                                <p class="nome">Diretor Jovem: Artur</p>
+                                <p class="numero">
+                                    <i onclick="mandarMensagem(5562992626950, 'Artur')" class="fa-brands fa-whatsapp"></i>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="Projeto">
-                        <p>Projeto AMAR</p>
 
-                        <div class="contato">
-                            <p class="nome">Artur</p>
-                            <p class="numero">
-                                <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
-                            </p>
+                        <div class="divIgreja Ype">
+                            <p class="nomeIgreja">Residencial Flor do Ypê</p>
+                            <div class="contato">
+                                <p class="nome">Diretor Jovem: Eurranderson</p>
+                                <p class="numero">
+                                    <i onclick="mandarMensagem(5562993168435, 'Eurranderson')" class="fa-brands fa-whatsapp"></i>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="Ype">
-                        <p>Residencial Flor do Ypê</p>
 
-                        <div class="contato">
-                            <p class="nome">Eurranderson</p>
-                            <p class="numero">
-                                <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
-                            </p>
+                        <div class="divIgreja Galvao">
+                            <p class="nomeIgreja">Vila Galvão</p>
+                            <div class="contato">
+                                <p class="nome">Diretor Jovem: Manoela</p>
+                                <p class="numero">
+                                    <i onclick="mandarMensagem(5562981806808, 'Manoela')" class="fa-brands fa-whatsapp"></i>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="Galvao">
-                        <p>Vila Galvão</p>
 
-                        <div class="contato">
-                            <p class="nome">Manoela</p>
-                            <p class="numero">
-                                <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
-                            </p>
-                        </div>
-                    </div>
+                    </section>
+
                 </section>
 
             </section>
@@ -354,7 +361,7 @@
         <!-- LINK JAVASCRIPT -->
         <script src="js/menu.js"></script>
         <script src="js/header.js"></script>
-
+        <script src="js/mensagemWhatsapp.js"></script>
         
     </body>
 
