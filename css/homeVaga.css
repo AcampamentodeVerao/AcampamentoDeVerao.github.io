@@ -1,0 +1,86 @@
+section#homeVaga {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../assets/img/Barraca-Vermelha-Paisagem.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-top: 82px;
+
+}
+
+section#homeVaga div.shadow {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    width: 100vw;
+
+    padding: 2rem;
+
+}
+
+section#homeVaga div.shadow div.pagamento {
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+
+    border-radius: 15px;
+
+    padding: 1.5rem;
+
+}
+
+section#homeVaga div.shadow div.pagamento h2{
+
+    background: #003366;
+    color: white;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    padding: 0.25rem 0;
+
+}
+
+section#homeVaga div.shadow div.pagamento p.alerta1,
+section#homeVaga div.shadow div.pagamento p.alerta2 {
+
+    background: #0369ce;
+    color: white;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+
+    text-align: center;
+
+}
+
+section#homeVaga div.shadow div.pagamento p.alerta1  {
+
+    border-top-right-radius: 10px;
+    
+    margin-top: 1rem;
+    padding: 0.5rem 0 0.25rem 0;
+
+}
+
+section#homeVaga div.shadow div.pagamento p.alerta2  {
+
+    border-bottom-left-radius: 10px;
+
+    margin-bottom: 1rem;
+    padding: 0.25rem 0 0.5rem 0;
+
+}

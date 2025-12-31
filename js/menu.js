@@ -12,4 +12,14 @@ function closeMenu() {
 
     }
 
+    if (document.querySelector('i').className == 'fa-solid fa-x') {
+
+        document.querySelector('i').className = 'fa-solid fa-bars'
+        
+    } else if (document.querySelector('i').className == 'fa-solid fa-bars') {
+    
+        document.querySelector('i').className = 'fa-solid fa-x'
+        
+    }
+
 }

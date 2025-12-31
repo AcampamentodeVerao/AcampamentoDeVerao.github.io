@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITÚLO DO SITE -->
+    <title>Acampamento de Verão 2025</title>
+
+    <!-- FAVICON (ICONE DO SITE) -->
+    <link rel="shortcut icon" href="../assets/svg/LogoJA.svg" type="image/x-icon">
+
+    <!-- LINKS ARQUIVOS CSS -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/homeVaga.css">
+    <link rel="stylesheet" href="../css/contatos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- LINKS ARQUIVOS CSS | HOME GARANTIR VAGA -->
+     <link rel="stylesheet" href="../css/informacaoPix.css">
+
+    <!-- LINK FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/64a86c5209.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="definirBackgroundHeader()">
+
+    <!-- HEADER | CABEÇALHO-->
+    <header id="header">
+
+        <div class="assets">
+            <img id="LogoJA" src="../assets/svg/LogoJA.svg" alt="Logo JA">
+            <img id="NomeMJA" src="../assets/svg/MinistérioJovemSenadorCanedoBranco.svg" alt="Nome Ministério JA">
+        </div>
+
+        <i onclick="closeMenu()" class="fa-solid fa-bars"></i>
+
+        <nav id="nav">
+            <ul>
+                <li onclick="closeMenu()"><a href="../index.html">Voltar</a></li>
+                <li onclick="closeMenu()"><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- HOME | PAGINA INICIAL -->
+    <section id="homeVaga">
+
+        <div class="shadow">
+
+            <div class="pagamento">
+
+                <h2>∙ COMO REALIZAR O PAGAMENTO ∙</h2>
+
+                <p class="alerta1">⚠️ As inscrições estão abertas até <strong>10/01/2026</strong>.</p>
+                <p class="alerta2">📌 O prazo final para pagamento da última parcela é <strong>30/01/2026</strong>.</p>
+
+                <div class="informacao regras">
+                    <p>
+                        Para reservar sua vaga, é necessário realizar o pagamento de
+                        <strong>50% do valor da inscrição</strong> para
+                        <strong>barraca</strong> ⛺ ou <strong>alojamento</strong> 🛏️.
+                    </p>
+
+                    <p>
+                        Visitas no meio de semana:
+                        <br>• Acima de 13 anos: <strong>R$ 60,00</strong>
+                        <br>• De 8 a 12 anos: <strong>R$ 30,00</strong>
+                        <br>• Até 7 anos: <strong>Isento</strong>
+                    </p>
+                </div>
+
+                <div class="informacao pix">
+
+                    <div class="textos">
+                        <h3>Pagamento via Pix (7Me)</h3>
+                        <p>
+                            Acesse o aplicativo <strong>7Me</strong> pelo QR Code, selecione a opção:
+                            <br><strong>Acampamento 2026</strong>
+                        </p>
+
+                        <p class="passos">
+                            Siga o passo a passo → Caminho no app:
+                            <br><em>- Outras Ofertas → Ofertas para minha igreja → Acampamento 2026</em>
+                        </p>
+                    </div>
+
+                    <img src="../assets/img/qrcode-pix.png" class="qrcode" alt="QR Code Pix Acampamento 2026">
+
+                    <div class="img">
+                        <img src="../assets/img/7me-Passo-1.jpeg" alt="7me">
+                        <img src="../assets/img/7me-Passo-2.jpeg" alt="7me">
+                        <img src="../assets/img/7me-Passo-3.jpeg" alt="7me">
+                        <img src="../assets/img/7me-Passo-4.jpeg" alt="7me">
+                    </div>
+
+                </div>
+
+                <div class="informacao confirmacao">
+                    <p>
+                        ✅ Após realizar o pagamento, é <strong>obrigatório</strong> enviar:
+                    </p>
+
+                    <ul>
+                        <li>- 📄 Comprovante de pagamento</li>
+                        <li>- 👤 Nome completo</li>
+                    </ul>
+
+                    <p class="importante">
+                        Envie estas informações para o(a) Diretor(a) jovem de sua Igreja.
+                        <strong>Acesse a aba CONTATOS, para enviar as informações basta apertar em cima do incone co WhatsApp!</strong>.
+                    </p>
+
+                    <p class="importante">
+                        Sem o envio dessas informações, a inscrição
+                        <strong>não será finalizada</strong>.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATOS -->
+    <section id="contatos">
+
+        <h2 class="titulo">∙ Igrejas do Distrito de Senador Canedo ∙</h2>
+
+        <h3>Diretores do Ministério Jovem de cada Igreja do Distrito de Senador Canedo.</h3>
+
+        <h4>Para mandar uma mensagem, aperte no icone do WhatsApp.</h4>
+
+        <section class="contatoDistrito">
+
+            <!-- <div class="distritalJovem">
+                    <p class="cargo">Distrital Ministério Jovem</p>
+
+                    <div class="contato">
+                        <p class="nome">Andréa da Costa</p>
+                        <p class="numero">
+                            <i onclick="mandarMensagem(5562981506517, 'Andréa')" class="fa-brands fa-whatsapp"></i>
+                        </p>
+                    </div>
+                </div> -->
+
+            <div class="distritalJovem">
+                <p class="cargo">Pastor Distrital</p>
+
+                <div class="contato">
+                    <p class="nome">Pastor Adriano</p>
+                    <p class="numero">
+                        <i onclick="mandarMensagem(5562995732020, 'Pastor Adriano', 'garanta sua vaga')" class="fa-brands fa-whatsapp"></i>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="listaIgrejas">
+
+            <p class="contatosDiretoresJovens">Contato dos Diretores Jovens de cada Igreja do Distrito de Senador Canedo
+            </p>
+
+            <section class="igrejas">
+
+                <section class="igrejasLadoEsquerdo">
+
+                    <!-- <div class="divIgreja BoaVista">
+                            <p class="nomeIgreja">Boa Vista II</p>
+                            <div class="contato">
+                                <p class="nome"></p>
+                                <p class="numero">
+                                    <i onclick="mandarMensagem()" class="fa-brands fa-whatsapp"></i>
+                                </p>
+                            </div>
+                        </div> -->
+
+                    <div class="divIgreja Central">
+                        <p class="nomeIgreja">Central Senador Canedo</p>
+                        <div class="contato">
+                            <p class="nome">Diretores Ministério Jovem: Mirian e Nathan</p>
+                            <p class="numero">
+                                <i onclick="mandarMensagem(5562998498406, 'Mirian e Nathan', 'garanta sua vaga')"
+                                    class="fa-brands fa-whatsapp"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="divIgreja Oliveiras">
+                        <p class="nomeIgreja">Jardim das Oliveiras</p>
+                        <div class="contato">
+                            <p class="nome">Diretora Jovem: Manu</p>
+                            <p class="numero">
+                                <i onclick="mandarMensagem(5562995676593, 'Manu', 'garanta sua vaga')" class="fa-brands fa-whatsapp"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="divIgreja Morada">
+                        <p class="nomeIgreja">Morada do Bosque</p>
+                        <div class="contato">
+                            <p class="nome">Diretora Jovem: Lorrainy</p>
+                            <p class="numero">
+                                <i onclick="mandarMensagem(5562993641611, 'Lorrainy', 'garanta sua vaga')"
+                                    class="fa-brands fa-whatsapp"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="igrejasLadoDireito">
+
+                    <div class="divIgreja Industrial">
+                        <p class="nomeIgreja">Parque Industrial</p>
+                        <div class="contato">
+                            <p class="nome">Diretor Jovem: Ideglan</p>
+                            <p class="numero">
+                                <i onclick="mandarMensagem(5562994451798, 'Ideglan', 'garanta sua vaga')" class="fa-brands fa-whatsapp"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="divIgreja Projeto">
+                        <p class="nomeIgreja">Projeto AMAR</p>
+                        <div class="contato">
+                            <p class="nome">Diretor Jovem: Tasso</p>
+                            <p class="numero">
+                                <i onclick="mandarMensagem(5562991836325, 'Tasso', 'garanta sua vaga')" class="fa-brands fa-whatsapp"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="divIgreja Ype">
+                        <p class="nomeIgreja">Residencial Flor do Ypê</p>
+                        <div class="contato">
+                            <p class="nome">Diretor Jovem: Eurranderson</p>
+                            <p class="numero">
+                                <i onclick="mandarMensagem(5562993168435, 'Eurranderson', 'garanta sua vaga')"
+                                    class="fa-brands fa-whatsapp"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="divIgreja Galvao">
+                        <p class="nomeIgreja">Vila Galvão</p>
+                        <div class="contato">
+                            <p class="nome">Diretor Jovem: Silvana</p>
+                            <p class="numero">
+                                <i onclick="mandarMensagem(5562981009738, 'Silvana', 'garanta sua vaga')" class="fa-brands fa-whatsapp"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+            </section>
+
+        </section>
+
+    </section>
+
+    <!-- ROTAPÉ -->
+    <footer>
+        <p>Igreja Adventista do Sétimo Dia</p>
+        <p><span>Acampamento de Verão 2025</span><span> | </span><span>Distrito de Senador Canedo</span></p>
+    </footer>
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/mensagemWhatsapp.js"></script>
+
+</body>
+
+</html>

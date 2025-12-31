@@ -1,0 +1,91 @@
+section#homeVaga div.shadow div.pagamento div.informacao {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    
+    background: white;
+    backdrop-filter: blur(20px);
+
+    color: #003366;
+    
+    border: 1px solid #003366;
+    border-radius: 0 10px 0 10px;
+
+    width: 70vw;
+    
+    margin: 1rem 0;
+    padding: 1rem;
+    
+
+}
+
+section#homeVaga div.shadow div.pagamento div.informacao p {
+
+    font-family: 'Montserrat';
+
+    padding-bottom: 0.5rem;
+
+    text-indent: 1rem;
+
+}
+
+section#homeVaga div.shadow div.pagamento div.informacao li {
+
+    font-family: 'Montserrat';
+    
+    list-style: none;
+
+    padding-bottom: 0.5rem;
+
+    text-indent: 2rem;
+
+}
+
+section#homeVaga div.shadow div.pagamento div.informacao img.qrcode {
+
+    margin: 1rem 0;
+
+}
+
+section#homeVaga div.shadow div.pagamento div.informacao.pix h3 {
+
+    font-family: 'Montserrat';
+    
+    text-align: center;
+    
+}
+
+section#homeVaga div.shadow div.pagamento div.informacao.pix div.img {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+section#homeVaga div.shadow div.pagamento div.informacao.pix div.img img {
+
+    width: 200px;
+
+    border: 1px solid #003366;
+    border-radius: 10px;
+
+}
+
+@media (max-width: 850px) {
+
+    section#homeVaga div.shadow div.pagamento div.informacao {
+        width: 80vw;
+    }
+ 
+    section#homeVaga div.shadow div.pagamento div.informacao.pix div.img {
+
+        grid-template-columns: repeat(1, 1fr);gap: 15px;
+
+    }
+
+}
