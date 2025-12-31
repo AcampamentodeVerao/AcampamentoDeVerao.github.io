@@ -32,9 +32,40 @@ section#homeVaga div.shadow div.pagamento {
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(20px);
 
+    text-align: center;
+
     border-radius: 15px;
 
     padding: 1.5rem;
+
+}
+
+section#homeVaga div.shadow div.pagamento a button {
+
+    background: #FF8200;
+    color: white;
+    
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    border: none;
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    width: 100%;
+    
+    margin: 0 0 2rem 0;
+    padding: 1rem 2rem;
+    
+    cursor: pointer;
+
+}
+
+section#homeVaga div.shadow div.pagamento a:hover {
+
+    background: rgb(187, 98, 3);
 
 }
 
