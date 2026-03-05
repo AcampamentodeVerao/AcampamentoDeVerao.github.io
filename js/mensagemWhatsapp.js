@@ -4,7 +4,7 @@ function mandarMensagem(numero, nomeDiretorJovem, arquivoHTML) {
 
         const diretorJovem = nomeDiretorJovem
     
-        const mensagem = `Olá ${diretorJovem}, quero saber mais informações sobre o Acampamento de Verão 2026!`;
+        const mensagem = `Olá ${diretorJovem}, quero saber mais informações sobre o Acampamento de Verão ${year}!`;
 
         const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
 
@@ -22,7 +22,8 @@ function mandarMensagem(numero, nomeDiretorJovem, arquivoHTML) {
         
     } else {
 
-        alert('ERRO AO ENVIAR A MENSSAGEM! INFORME IMEDIATAMENTE ESTE ERRO AO SEU DIRETOR(A) JOVEM!')
+        alert('ERRO AO ENVIAR A MENSSAGEM!')
+        alert(' INFORME IMEDIATAMENTE ESTE ERRO AO SEU DIRETOR(A) JOVEM!')
 
     }
     
