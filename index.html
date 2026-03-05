@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/inscricao.css">
-    <link rel="stylesheet" href="css/localizacao.css">
+    <!-- <link rel="stylesheet" href="css/sobre.css"> -->
+    <!-- <link rel="stylesheet" href="css/inscricao.css"> -->
+    <!-- <link rel="stylesheet" href="css/localizacao.css"> -->
     <link rel="stylesheet" href="css/contatos.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -56,9 +56,9 @@
         <nav id="nav">
             <ul>
                 <li onclick="closeMenu()"><a href="#home">Home</a></li>
-                <li onclick="closeMenu()"><a href="#sobre">Sobre</a></li>
-                <li onclick="closeMenu()"><a href="#inscricao">Inscrição</a></li>
-                <li onclick="closeMenu()"><a href="#localizacao">Localização</a></li>
+                <!-- <li onclick="closeMenu()"><a href="#sobre">Sobre</a></li> -->
+                <!-- <li onclick="closeMenu()"><a href="#inscricao">Inscrição</a></li> -->
+                <!-- <li onclick="closeMenu()"><a href="#localizacao">Localização</a></li> -->
                 <li onclick="closeMenu()"><a href="#contatos">Contatos</a></li>
             </ul>
         </nav>
@@ -71,10 +71,10 @@
         <div class="shadow">
 
             <div class="conteudo">
-                <h1>Acampamento de Verão 2026</h1>
-                <p>∙ 13 a 17 de Fevereiro de 2026 ∙</p>
+                <h1 id="h1_Home"></h1>
+                <p class="dataAcampamento" id="dataAcampamento">∙ EM BREVE ∙</p>
                 <a href="index.html" rel="noopener noreferrer">
-                    <button>GARANTA SUA VAGA</button></a>
+                    <button>AGUARDE</button></a>
             </div>
 
         </div>
@@ -82,7 +82,7 @@
     </section>
 
     <!-- SOBRE -->
-    <section id="sobre">
+    <section style="display: none;" id="sobre">
 
         <p class="titulo">∙ Sobre ∙</p>
 
@@ -90,7 +90,7 @@
 
             <section class="esquerda">
 
-                <h1>ACAMPAMENTO DE <strong>VERÃO 2026</br></h1>
+                <h1 id="h1_sobre">ACAMPAMENTO DE <strong>VERÃO 2026</h1>
 
                 <section class="textos">
 
@@ -158,7 +158,7 @@
     </section>
 
     <!-- INSCRIÇÃO -->
-    <section id="inscricao">
+    <section style="display: none;" id="inscricao">
 
         <p class="titulo">∙ Inscrições ∙</p>
 
@@ -224,8 +224,8 @@
 
     </section>
 
-    <!-- INSCRIÇÃO -->
-    <section id="localizacao">
+    <!-- LOCALIZAÇÃO -->
+    <section style="display: none;" id="localizacao">
 
         <div class="endereco">
             <p class="titulo">∙ Endereço do Acampamento ∙</p>
@@ -254,16 +254,16 @@
 
         <section class="contatoDistrito">
 
-            <!-- <div class="distritalJovem">
+                <div class="distritalJovem">
                     <p class="cargo">Distrital Ministério Jovem</p>
 
                     <div class="contato">
-                        <p class="nome">Andréa da Costa</p>
+                        <p class="nome">Lucas</p>
                         <p class="numero">
-                            <i onclick="mandarMensagem(5562981506517, 'Andréa')" class="fa-brands fa-whatsapp"></i>
+                            <i onclick="mandarMensagem(5562982637499, 'Lucas')" class="fa-brands fa-whatsapp"></i>
                         </p>
                     </div>
-                </div> -->
+                </div>
 
             <div class="distritalJovem">
                 <p class="cargo">Pastor Distrital</p>
@@ -385,10 +385,11 @@
     <!-- ROTAPÉ -->
     <footer>
         <p>Igreja Adventista do Sétimo Dia</p>
-        <p><span>Acampamento de Verão 2026</span><span> | </span><span>Distrito de Senador Canedo</span></p>
+        <p><span id="span_footer">Acampamento de Verão 2026</span><span> | </span><span>Distrito de Senador Canedo</span></p>
     </footer>
 
     <!-- LINK JAVASCRIPT -->
+    <script src="js/date.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/header.js"></script>
     <script src="js/mensagemWhatsapp.js"></script>

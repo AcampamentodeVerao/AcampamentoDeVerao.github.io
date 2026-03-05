@@ -13,7 +13,7 @@ header {
 
     padding: 1rem 2rem;
 
-    box-shadow: 0 5px 10px #001b36;
+    box-shadow: 0 5px 10px #001b36b9;
 
     z-index: 1;
 
@@ -104,6 +104,8 @@ header nav ul li a {
 
     color: white;
 
+    transition: 0.2s;
+
 }
 
 header nav ul li a:hover {
@@ -135,13 +137,15 @@ header nav ul li a:hover {
 
     header nav.background-day {
 
-        background-color: #0569CE;
+        background-color: rgba(5, 105, 206, 0.600);
+        backdrop-filter: blur(5px)
 
     }
 
     header nav.background-night {
 
-        background-color: #003366;
+        background-color: rgba(0, 51, 102, 0.600);
+        backdrop-filter: blur(5px)
 
     }
 
