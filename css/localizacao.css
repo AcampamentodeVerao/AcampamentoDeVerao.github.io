@@ -2,218 +2,327 @@ section#localizacao {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
-    background: #003366;
+    gap: 3rem;
 
-    height: 100vh;
+    background: var(--azul-escuro);
 
-    margin-top: 2rem;
+    min-height: calc(100vh - 82px);
 
-    padding: 0 4rem;
+    padding: 4rem 8%;
 
 }
 
+/* CARD ENDEREÇO */
+
 section#localizacao div.endereco {
-    
+
+    position: relative;
+
     background: white;
 
-    border: 2px solid #001b36;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
 
-    box-shadow: 3px -3px 5px #003366, -3px -3px 5px #001b36;
+    box-shadow: var(--shadow-lg);
 
     width: 450px;
-    height: 400px;
 
-    padding: 1rem;
+    padding: 2rem;
+
+    overflow: hidden;
+
+}
+
+section#localizacao div.endereco::after {
+
+    content: "EM BREVE";
+
+    position: absolute;
+
+    top: 20px;
+    right: -45px;
+
+    background: var(--amarelo);
+
+    color: var(--azul-escuro);
+
+    font-family: 'museo-sans-500';
+
+    font-size: .8rem;
+
+    letter-spacing: 2px;
+
+    padding: .5rem 3rem;
+
+    transform: rotate(45deg);
+
+}
+
+section#localizacao div.endereco.local-definido::after {
+
+    display: none;
 
 }
 
 section#localizacao div.endereco p.titulo {
 
-    color: #003366;
+    background: var(--azul-principal);
 
-    font-family: 'Montserrat';
-    font-size: 1.5rem;
-    font-weight: 700;
+    color: white;
+
+    font-family: 'museo-sans-500';
+
+    font-size: 1.4rem;
 
     text-align: center;
-    text-shadow: 0 0 10px white;
 
-    padding: 1rem 0;
+    border-radius: var(--radius-md);
+
+    padding: 1rem;
+
+    margin-bottom: 1.5rem;
 
 }
 
-section#localizacao div.endereco p {
+section#localizacao p#nomeLocal {
 
-    color: black;
+    color: var(--azul-escuro);
 
-    font-family: 'Montserrat';
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: 'museo-sans-500';
 
-    text-align: left;
-    text-shadow: 0 0 10px white;
-    text-indent: 1rem;
+    font-size: 1.2rem;
 
     margin-bottom: 1rem;
 
 }
 
+section#localizacao p#enderecoLocal {
+
+    color: var(--texto-principal);
+
+    font-family: 'Montserrat';
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+}
+
+/* MAPA / PLACEHOLDER */
+
+section#localizacao .mapaContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section#localizacao #placeholderMapa {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+    width: 700px;
+    height: 450px;
+
+    background: rgba(255,255,255,.08);
+
+    border: 2px dashed rgba(255,255,255,.25);
+
+    border-radius: var(--radius-lg);
+
+    text-align: center;
+
+    padding: 2rem;
+
+}
+
+section#localizacao #placeholderMapa i {
+
+    color: var(--amarelo);
+
+    font-size: 3rem;
+
+}
+
+section#localizacao #placeholderMapa p {
+
+    color: white;
+
+    font-family: 'museo-sans-500';
+
+    font-size: 1.5rem;
+
+}
+
+section#localizacao #placeholderMapa span {
+
+    color: rgba(255,255,255,.85);
+
+    font-family: 'Montserrat';
+
+    line-height: 1.6;
+
+    max-width: 350px;
+
+}
+
 section#localizacao iframe {
 
-    border-radius: 20px;
+    display: none;
 
-    border: 100px solid #003366;
-    
     width: 700px;
-    height: 400px;
+    height: 450px;
+
+    border: none;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
 
 }
 
-@media (max-width: 1240px) {
-
-    section#localizacao iframe {
-    
-        width: 500px;
-    
-    }    
-
-}
+/* TABLET */
 
 @media (max-width: 1080px) {
 
     section#localizacao {
-    
-        padding: 2rem 4rem;
-    
+
+        gap: 2rem;
+
+        padding: 4rem 5%;
+
     }
 
     section#localizacao div.endereco {
-    
+
         width: 380px;
-    
-    }
-
-    section#localizacao div.endereco p.titulo {
-    
-        font-size: 1.2rem;
-    
-    } 
-    
-    section#localizacao div.endereco p {
-    
-        font-size: 1rem;
 
     }
 
-    section#localizacao iframe {
-    
-        width: 400px;
-    
-    }    
+    section#localizacao iframe,
+    section#localizacao #placeholderMapa {
+
+        width: 500px;
+
+    }
 
 }
 
-@media (max-width: 880px) {
+/* MOBILE GRANDE */
 
-    section#localizacao {
-        
-        height: auto;
-    
-        padding: 2rem 1rem;
-    
-    }
+@media (max-width: 880px) {
 
     section#localizacao {
 
         flex-direction: column;
 
+        min-height: auto;
+
+        padding: 4rem 1rem;
+
     }
 
     section#localizacao div.endereco {
-    
-        width: 450px;
-        height: auto;
 
-        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 500px;
 
-        padding: 0.5rem;
-    
     }
-    
-    section#localizacao iframe {
-    
-        width: 450px;
-    
+
+    section#localizacao iframe,
+    section#localizacao #placeholderMapa {
+
+        width: 100%;
+        max-width: 500px;
+
     }
 
 }
+
+/* MOBILE */
 
 @media (max-width: 550px) {
 
     section#localizacao div.endereco {
 
-        width: 350px;
+        padding: 1.5rem;
 
     }
 
     section#localizacao div.endereco p.titulo {
-    
-        font-size: 1rem;
-    
-    }
 
-    section#localizacao div.endereco p {
-    
-        text-indent: 0;
+        font-size: 1.2rem;
 
     }
-    
-    section#localizacao iframe {
-    
-        width: 350px;
+
+    section#localizacao p#nomeLocal {
+
+        font-size: 1.1rem;
+
+    }
+
+    section#localizacao p#enderecoLocal {
+
+        font-size: .95rem;
+
+    }
+
+    section#localizacao iframe,
+    section#localizacao #placeholderMapa {
+
+        height: 350px;
+
+    }
+
+    section#localizacao #placeholderMapa p {
+
+        font-size: 1.2rem;
+
+    }
+
+}
+
+/* MOBILE PEQUENO */
+
+@media (max-width: 400px) {
+
+    section#localizacao p#enderecoLocal {
+
+        font-size: .9rem;
+
+    }
+
+    section#localizacao iframe,
+    section#localizacao #placeholderMapa {
+
         height: 300px;
 
     }
 
 }
 
-@media (max-width: 400px) {
-
-    section#localizacao div.endereco {
-
-        width: 300px;
-
-    }
-
-    section#localizacao div.endereco p {
-    
-        font-size: 0.8rem;
-    
-    }
-    
-    section#localizacao iframe {
-    
-        width: 300px;
-
-    }
-
-}
+/* CELULARES MUITO PEQUENOS */
 
 @media (max-width: 320px) {
 
-    section#localizacao div.endereco {
+    section#localizacao iframe,
+    section#localizacao #placeholderMapa {
 
-        width: 280px;
+        height: 260px;
 
     }
-    
-    section#localizacao iframe {
-    
-        width: 280px;
-        height: 280px;
+
+    section#localizacao #placeholderMapa span {
+
+        font-size: .9rem;
 
     }
 

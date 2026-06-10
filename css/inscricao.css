@@ -2,25 +2,27 @@ section#inscricao {
 
     display: flex;
     align-items: center;
-
     flex-direction: column;
 
-    padding: 0 2rem;
+    padding: 1rem 0;
+
+    background: var(--cinza-claro);
+
+    border-top: 1px solid var(--cinza-escuro);
 
 }
 
 section#inscricao p.titulo {
 
-    color: #003366;
+    color: var(--azul-principal);
 
-    font-family: 'Montserrat';
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'museo-sans-500';
+
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
 
     text-align: center;
-    text-shadow: 0 0 10px white;
 
-    padding: 1rem 0;
+    margin-bottom: 1rem;
 
 }
 
@@ -28,120 +30,157 @@ section#inscricao p.optionSleep {
 
     font-family: 'Montserrat';
 
-    margin-bottom: 1rem;
-    
+    font-size: 1.1rem;
+
     text-align: center;
+
+    margin-bottom: 2rem;
+
+    color: var(--texto-secundario);
 
 }
 
 section#inscricao section.gridOptions {
 
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
-    
-    gap: 10px;
+
+    gap: 2rem;
+
+    width: 100%;
+
+    max-width: 1200px;
 
 }
 
 section#inscricao section.gridOptions section.dormitorios {
 
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    
     flex-direction: column;
-    
-    width: 500px;
-    height: 100%;
 
-    border: 1px solid #FF8200;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    background: white;
+
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: .25s ease;
+
+}
+
+section#inscricao section.gridOptions section.dormitorios:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: var(--shadow-md);
 
 }
 
 section#inscricao section.gridOptions section.dormitorios p.tituloOptions {
 
-    background: #FF8200;
+    background: var(--azul-principal);
+
     color: white;
-    
-    font-family: 'Montserrat';
-    font-weight: 500;
+
+    font-family: 'museo-sans-500';
+
     font-size: 1.2rem;
 
     text-align: center;
 
-    border: none;
-    
-    width: 100%;
-    
-    padding: 0.5rem 1rem;
+    padding: 1rem;
+
+}
+
+section#inscricao section.gridOptions section.dormitorios div.conteudo {
+
+    flex: 1;
 
 }
 
 section#inscricao section.gridOptions section.dormitorios div.conteudo p {
 
     font-family: 'Montserrat';
-    font-weight: 500;
 
     text-align: justify;
-    text-indent: 2rem;
 
-    padding: 1rem;
+    line-height: 1.7;
+
+    color: var(--texto-secundario);
+
+    padding: 1.5rem;
 
 }
 
 section#inscricao button {
 
-    background: #FF8200;
-    color: white;
-    
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 1.2rem;
+    background: var(--amarelo);
 
-    border: none;
-    border-radius: 10px;
-    
-    margin-top: 1rem;
-    padding: 1rem 2rem;
+    color: var(--azul-escuro);
 
-    cursor: pointer;
+    font-family: 'museo-sans-500';
+
+    font-size: 1rem;
+
+    border-radius: var(--radius-md);
+
+    margin-top: 2rem;
+
+    padding: 1rem 2.5rem;
+
+    transition: .25s ease;
+
+    box-shadow: var(--shadow-sm);
 
 }
 
 section#inscricao button:hover {
 
-    background: #eb871c;
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-md);
 
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 900px) {
 
-    section#inscricao section.gridOptions section.dormitorios {
-     
-        width: 300px;
-    
-    }    
+    section#inscricao section.gridOptions {
+
+        grid-template-columns: 1fr;
+
+    }
 
 }
 
 @media (max-width: 720px) {
 
-    section#inscricao section.gridOptions section.dormitorios {
-     
-        width: 100%;
-    
+    section#inscricao {
+
+        padding: 3rem 1rem;
+
     }
-    
+
     section#inscricao section.gridOptions {
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        gap: 1rem;
 
-        flex-direction: column;
-    
+    }
+
+    section#inscricao section.gridOptions section.dormitorios div.conteudo p {
+
+        padding: 1rem;
+
+    }
+
+    section#inscricao button {
+
+        width: 100%;
+
+        max-width: 350px;
+
     }
 
 }

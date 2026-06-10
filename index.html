@@ -230,18 +230,38 @@
     <section id="localizacao">
 
         <div class="endereco">
+
             <p class="titulo">∙ Endereço do Acampamento ∙</p>
 
-            <p>∙ Vila Luna - Espaço Para Eventos</p>
+            <p id="nomeLocal"></p>
 
-            <p>∙ Av. Antônio da Silva Espíndola, Chácara 3 e 4, Goiânia, 74395-013, GO, BR</p>
+            <p id="enderecoLocal"></p>
 
         </div>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3084.6758907897593!2d-49.36590576171875!3d-16.72595977783203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e59ccf66dd613%3A0x1665d3dd2bec95ad!2sVilla%20Luna%20-%20Espa%C3%A7o%20para%20Eventos!5e1!3m2!1spt-BR!2sbr!4v1767190291070!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="mapaContainer">
+
+            <div id="placeholderMapa">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <p>LOCAL EM DEFINIÇÃO</p>
+
+                <span>
+                    O mapa será disponibilizado quando o local do evento for divulgado.
+                </span>
+
+            </div>
+
+            <iframe
+                id="mapa"
+                src=""
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
 
     </section>
 
@@ -391,6 +411,7 @@
     </footer>
 
     <!-- LINK JAVASCRIPT -->
+    <script src="js/localDefinido.js"></script> 
     <script src="js/date.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/header.js"></script>

@@ -10,17 +10,145 @@
     src: url(../assets/fonts/MuseoSans-100.otf);
 }
 
+:root {
+
+    /* CORES */
+
+    --azul-principal: #0569CE;
+    --azul-escuro: #003366;
+    --azul-hover: #033B74;
+
+    --amarelo: #FFD300;
+
+    --branco: #FFFFFF;
+
+    --texto-principal: #222222;
+    --texto-secundario: #555555;
+
+    --cinza-claro: #F5F7FA;
+    --cinza-escuro: #4d4d4d;
+
+    /* SOMBRAS */
+
+    --shadow-sm: 0 4px 12px rgba(0,0,0,.08);
+    --shadow-md: 0 8px 24px rgba(0,0,0,.12);
+    --shadow-lg: 0 15px 40px rgba(0,0,0,.15);
+
+    /* BORDAS */
+
+    --radius-sm: 8px;
+    --radius-md: 15px;
+    --radius-lg: 25px;
+
+}
+
 * {
 
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
-    
+
     outline: none;
 
     scroll-behavior: smooth;
-    
+
     scroll-margin-top: 82px;
-    
+
+}
+
+html {
+
+    overflow-x: hidden;
+
+}
+
+body {
+
+    font-family: "Montserrat", sans-serif;
+
+    color: var(--texto-principal);
+
+    background: var(--branco);
+
+    overflow-x: hidden;
+
+}
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+}
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+button {
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+}
+
+section {
+
+    width: 100%;
+
+}
+
+.titulo {
+
+    font-family: 'museo-sans-500';
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    text-align: center;
+
+    color: var(--azul-principal);
+
+}
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #e5e5e5;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--azul-principal);
+
+    border-radius: 999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--azul-escuro);
+
+}
+
+::selection {
+
+    background: var(--amarelo);
+
+    color: black;
+
 }

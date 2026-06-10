@@ -8,7 +8,8 @@ section#home {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh; /* 100% da altura da viewport */
+
+    height: 90vh;
 
     margin-top: 82px;
 
@@ -20,72 +21,95 @@ section#home div.shadow {
     align-items: center;
     justify-content: flex-start;
 
-    background: rgba(0, 0, 0, 0.5);
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0, 51, 102, .78),
+        rgba(0, 0, 0, .40)
+    );
 
     width: 100vw;
     height: 90vh;
 
-    padding: 11rem;
+    padding: 0 10%;
 
 }
 
 section#home div.shadow div.conteudo {
 
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
     flex-direction: column;
 
-    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
 
-    width: 500px;
-    height: 250px;
+    max-width: 650px;
 
 }
 
 section#home div.shadow div.conteudo h1 {
 
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 3rem;
+    font-family: 'museo-sans-500';
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 1.1;
 
     color: white;
+
+    margin-bottom: 1.5rem;
+
+    text-shadow: 0 2px 10px rgba(0,0,0,.2);
 
 }
 
 section#home div.shadow div.conteudo p {
 
     font-family: 'Montserrat';
+
     font-weight: 500;
 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     color: white;
+
+    background: rgba(255,255,255,.12);
+
+    padding: .8rem 1.4rem;
+
+    border-radius: 999px;
+
+    margin-bottom: 2rem;
+
+    backdrop-filter: blur(5px);
 
 }
 
 section#home div.shadow div.conteudo button {
 
-    background: #FF8200;
-    color: white;
-    
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 1.2rem;
+    background: var(--amarelo);
 
-    border: none;
-    border-radius: 10px;
+    color: var(--azul-escuro);
 
-    padding: 1rem 2rem;
+    font-family: 'museo-sans-500';
 
-    cursor: pointer;
+    font-size: 1rem;
+
+    padding: 1rem 2.2rem;
+
+    border-radius: var(--radius-md);
+
+    transition: .25s ease;
+
+    box-shadow: var(--shadow-md);
 
 }
 
 section#home div.shadow div.conteudo button:hover {
 
-    background: #eb871c;
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-lg);
 
 }
 
@@ -94,35 +118,28 @@ section#home div.shadow div.conteudo button:hover {
     section#home {
 
         height: 80vh;
-    
+
     }
 
     section#home div.shadow {
 
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
 
-        /* NÃO É PRA TIRAR (width: 100%;), NÃO SEI PQ, SÓ SEI QUE SE TIRAR DÁ RUIM */
         width: 100%;
-        /* ESSE AQUI TAMBEM, NÃO PODE TIRAR */
         height: 80vh;
-        
-        padding: 5rem;
-    
+
+        padding: 3rem;
+
     }
 
     section#home div.shadow div.conteudo {
 
         align-items: center;
 
-        width: 700px;
-    
-    }
-
-    section#home div.shadow div.conteudo h1,
-    section#home div.shadow div.conteudo p {
-
         text-align: center;
+
+        max-width: 700px;
 
     }
 
@@ -131,66 +148,56 @@ section#home div.shadow div.conteudo button:hover {
 @media (max-width: 720px) {
 
     section#home div.shadow {
-    
-        align-items: center;
-        
-        padding: 2rem 1rem;
+
+        padding: 2rem 1.5rem;
 
     }
 
     section#home div.shadow div.conteudo {
-    
-        width: 80vw;
-    
-    }
 
-    section#home div.shadow div.conteudo h1 {
-    
-        font-weight: 700;
-    
-    }
-
-    section#home div.shadow div.conteudo button {
-    
         width: 100%;
-    
-    }
-
-    section#home div.shadow div.conteudo button {
-
-        font-size: 1rem;
-    
-    }
-
-}
-
-@media (max-width: 500px) {
-    
-    section#home div.shadow div.conteudo {
-    
-        width: 300px;
-        height: max-content;
-    
-    }
-
-    section#home div.shadow div.conteudo h1 {
-        
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
 
     }
 
     section#home div.shadow div.conteudo p {
 
-        font-size: 1rem;
-
-        margin-bottom: 2rem;
+        font-size: .95rem;
 
     }
 
-    section#home div.shadow div.conteudo a button {
+    section#home div.shadow div.conteudo button {
 
-        width: 270px;
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    section#home {
+
+        height: 75vh;
+
+    }
+
+    section#home div.shadow {
+
+        height: 75vh;
+
+    }
+
+    section#home div.shadow div.conteudo h1 {
+
+        font-size: 2rem;
+
+    }
+
+    section#home div.shadow div.conteudo p {
+
+        font-size: .9rem;
+
+        padding: .7rem 1rem;
 
     }
 

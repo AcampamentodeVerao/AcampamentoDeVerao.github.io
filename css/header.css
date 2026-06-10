@@ -9,26 +9,31 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    background: #0569CE;
+    padding: 1rem 3rem;
 
-    padding: 1rem 2rem;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 
-    box-shadow: 0 5px 10px #001b36b9;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 
-    z-index: 1;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+    transition: .3s ease;
+
+    z-index: 1000;
 
 }
 
 header.background-day {
 
-    background-color: #0569CE;
-    
+    background: rgba(5, 105, 206, 0.92);
+
 }
 
 header.background-night {
 
-    background-color: #003366;
-    
+    background: rgba(0, 51, 102, 0.92);
+
 }
 
 header div.assets {
@@ -45,11 +50,21 @@ header div.assets img#LogoJA {
 
     margin-right: 1rem;
 
+    transition: .3s ease;
+
+}
+
+header div.assets img#LogoJA:hover {
+
+    transform: scale(1.05);
+
 }
 
 header div.assets img#NomeMJA {
 
-    width: 200px;
+    width: 150px;
+
+    transition: .3s ease;
 
 }
 
@@ -57,14 +72,21 @@ header i.fa-solid.fa-bars,
 header i.fa-solid.fa-x {
 
     display: none;
-    
-    font-size: 1.5rem;
+
+    font-size: 1.6rem;
 
     color: white;
 
     cursor: pointer;
 
-    transition: 0.2s;
+    transition: .3s ease;
+
+}
+
+header i.fa-solid.fa-bars:hover,
+header i.fa-solid.fa-x:hover {
+
+    transform: scale(1.15);
 
 }
 
@@ -75,8 +97,8 @@ header nav ul {
     justify-content: space-between;
 
     list-style-type: none;
-    
-    /* gap: 10px; */
+
+    gap: .5rem;
 
 }
 
@@ -85,8 +107,6 @@ header nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* width: 120px; */
 
 }
 
@@ -98,28 +118,40 @@ header nav ul li a {
     text-decoration: none;
     text-align: center;
 
-    width: 100%;
-
-    padding: 0.5rem;
-
     color: white;
 
-    transition: 0.2s;
+    padding: .75rem 1.2rem;
+
+    border-radius: 999px;
+
+    transition: .25s ease;
 
 }
 
 header nav ul li a:hover {
 
-    color: #FFD300;
-    background: #033B74;
+    color: white;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    transform: translateY(-2px);
 
 }
 
 @media (max-width: 1080px) {
-    
+
+    header {
+
+        padding: 1rem 2rem;
+
+    }
+
     header nav {
 
-        position: absolute;
+        position: fixed;
+
         top: 0;
         left: -100vw;
 
@@ -130,22 +162,25 @@ header nav ul li a:hover {
         width: 100vw;
         min-height: 100vh;
 
-        transition: 0.2s;
-
+        transition: .35s ease;
 
     }
 
     header nav.background-day {
 
-        background-color: rgba(5, 105, 206, 0.600);
-        backdrop-filter: blur(5px)
+        background: rgba(5, 105, 206, 0.75);
+
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
 
     }
 
     header nav.background-night {
 
-        background-color: rgba(0, 51, 102, 0.600);
-        backdrop-filter: blur(5px)
+        background: rgba(0, 51, 102, 0.75);
+
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
 
     }
 
@@ -160,38 +195,67 @@ header nav ul li a:hover {
 
         display: block;
 
-        z-index: 1;
-    
+        z-index: 1001;
+
     }
 
     header nav ul {
 
         flex-direction: column;
 
-        gap: 0;
+        gap: 1rem;
 
     }
 
     header nav ul li {
 
-        width: 100vw;
-        
+        width: auto;
+
     }
 
     header nav ul li a {
 
-        font-size: 1.2rem;
-        padding: 1rem 0;
+        font-size: 1.3rem;
+
+        padding: 1rem 2rem;
+
+        min-width: 250px;
+
+        border-radius: 15px;
+
+        background: rgba(255,255,255,0.08);
 
     }
-    
+
+    header nav ul li a:hover {
+
+        background: rgba(255,255,255,0.18);
+
+        transform: scale(1.03);
+
+    }
+
 }
 
 @media (max-width: 550px) {
 
-    header div.assets img#NomeMJA {
+    header {
+
+        padding: 1rem 1.5rem;
+
+    }
+
+    header div.assets img#LogoJA {
 
         display: none;
+
+    }
+
+    header div.assets img#NomeMJA {
+
+        width: 160px;
+
+        margin-right: 0;
 
     }
 
