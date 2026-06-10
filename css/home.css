@@ -173,10 +173,11 @@ section#home div.shadow div.conteudo button:hover {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
     section#home {
 
+        margin-top: 74px;
         height: 75vh;
 
     }
